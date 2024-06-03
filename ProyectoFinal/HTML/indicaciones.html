@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Indicaciones</title>
+    <link rel="stylesheet" href="C:\ProyectoFinal/CSS/indicaciones.css" />
+</head>
+
+<body>
+    <header class="header-container">
+        <p class="logo">Logo página</p>
+        <icon class="icon">Facebook</icon>
+        <icon class="icon">Instagram</icon>
+        <icon class="icon">Twitter</icon>
+    </header>
+    <main id="mainContent" class="main-container">
+        <article class="card a1">
+            <p>Bienvenido a Alvarado Bienes Raices & Asociados</p>
+            <p>
+                Aquí podras entender como registrar un producto correctamente
+            </p>
+        </article>
+        <article class="card a2">
+            <form class="registro" action="C:\ProyectoFinal/HTML/productos.html" method="get"
+                onsubmit="validarCodigo(event)">
+                <label>
+                    <h2>INDICACIONES</h2>
+                </label>
+                <label for="nombre">Nombre producto: </label> <br>
+                <p>No superior a 20 caracteres</p>
+
+                <label for="categoria">Categoria:</label>
+                <p>Selecciona una categoria</p>
+                <br />
+
+                <label for="imagen">Imagen:</label>
+                <br />
+                <p>Selecciona una imagen</p>
+                <label for="codigo">Codigo:</label>
+                <p>Mínimo 8 caracteres, debe tener almenos una minúscula y una mayuscula, debe tener mínimo 2 números.</p>
+                <br />
+                <label for="precio">Precio:</label>
+                <p>Solo se aceptan numeros</p>
+                <br />
+                <label for="ubicacion">Ubicacion:</label>
+                <p>Ingresa un ubicacion</p>
+
+                <br />
+                <label for="area">Area:</label>
+                <p>Ingresa una area</p>
+                <br />
+                <label for="detalles">Detalles:</label>
+                <p>Escribe los detalles</p>
+                </label><br>    
+
+                <button onclick="volver('C:\ProyectoFinal/index.html')">Regresar</button>
+
+        </article>
+    </main>
+    <footer>© Alvarado Bienes Raices & Asociados S.A.S</footer>
+</body>
+
+</html>
