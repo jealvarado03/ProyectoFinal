@@ -1,0 +1,36 @@
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .a1 {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .header-container p {
+    margin-right: auto;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
