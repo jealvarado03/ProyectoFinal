@@ -1,0 +1,48 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+
+.header-container p {
+    margin-right: auto;
+}
+
+.header-container h2 {
+    margin: 0 250px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+
+table {
+    width: 80%; /* Ancho de la tabla */
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    border-collapse: collapse; /* Combinar los bordes de las celdas */
+}
+
+table, th, td {
+    border: 1px solid black; /* Borde de las celdas */
+}
+
+th, td {
+    padding: 8px; /* Espaciado dentro de las celdas */
+    text-align: left; /* Alineación del texto */
+}

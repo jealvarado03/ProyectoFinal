@@ -1,0 +1,65 @@
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambiamos a 3 columnas */
+    gap: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+
+.header-container p {
+    margin-right: auto;
+}
+
+.header-container h2{
+    margin: 0 250px;
+}
+
+.filtros{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0; 
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botones button {
+    margin: 0 10px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.tarjeta {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    width: 198px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Cambiamos a 5 columnas */
+    gap: 20px; /* Espacio entre las tarjetas */
+}

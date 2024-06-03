@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Registro</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+  <header class="header-container">
+    <p class="logo">Logo página</p>
+    <icon class="icon">Facebook</icon>
+    <icon class="icon">Instagram</icon>
+    <icon class="icon">Twitter</icon>
+  </header>
+  <main id="mainContent" class="main-container">
+    <article class="card a1">
+      <p>Bienvenido a Alvarado Bienes Raices & Asociados</p>
+      <p>
+        Aquí podras registrar tu inmbueble para ser puesto a la venta, sigue
+        las instrucciones del formulario que esta a continuación
+      </p>
+    </article>
+    <article class="card a2">
+      <form class="registro" action="C:\ProyectoFinal/HTML/productos.html" method="get" onsubmit="validarCodigo(event)">
+        <label>
+          <h2>REGISTRO</h2>
+        </label>
+        <label for="nombre">Nombre producto:</label>
+        <input type="text" id="nombre" name="nombre" minlength="1" maxlength=20 required /><br />
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria">
+          <option>Residencial</option>
+          <option>Comercial</option>
+          <option>Industrial</option>
+          <option>Terrenos y parcelas</option>
+          <option>Inversiones</option>
+          <option>Lujo</option>
+          <option>Rural</option>
+        </select>
+        <br />
+
+        <label for="imagen">Imagen:</label>
+        <input type="file" id="imagen" accept=".jpg, .jpeg, .png">
+        <br />
+        <label for="codigo">Codigo:</label>
+        <input type="text" id="codigo" name="codigo" minlength="8" required />
+        <span id="mensaje"></span>
+        <br />
+        <label for="precio">Precio:</label>
+        <input type="text" id="precio" name="precio" required oninput="formatoPrecio()" />
+        <br />
+        <label for="ubicacion">Ubicacion:</label>
+        <input type="ubicacion" id="ubicacion" name="ubicacion" required />
+        <br />
+        <label for="area">Area:</label>
+        <input type="area" id="area" name="area" required />
+        <br />
+        <label for="detalles">Detalles:</label>
+        <input type="detalles" id="detalles" name="detalles" required /><br>
+        <button type="submit"> Registrar</button>
+        <button onclick="guardarDatos()" type="button">Guardar</button>
+        <button onclick="limpiarCampos()" type="button">Limpiar campos</button>
+      </form>
+      
+    </article>
+  </main>
+  <footer>© Alvarado Bienes Raices & Asociados S.A.S</footer>
+  <script src="C:\ProyectoFinal\JS\index.js"></script>
+  <script src="C:\ProyectoFinal\JS\datos.js"></script>
+</body>
+
+</html>

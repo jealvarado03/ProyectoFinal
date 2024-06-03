@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Busqueda de productos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='C:\ProyectoFinal/CSS/busqueda.css'>
+</head>
+
+<body>
+    <header class="header-container">
+        <p class="logo">Logo página</p>
+        <label>
+            <h2>BUSQUEDA</h2>
+        </label>
+        <icon class="icon">Facebook</icon>
+        <icon class="icon">Instagram</icon>
+        <icon class="icon">Twitter</icon>
+
+    </header>
+    <main>
+        <section class="filtros">
+            <label>Nombre</label>
+            <input type="text" id="nombre">
+            <label>Categoria</label>
+            <select id="categoria">
+                <option>Casa</option>
+                <option>Apartaestudio</option>
+                <option>Finca</option>
+            </select>
+            <label>Ubicacion</label>
+            <select id="ubicacion">
+                <option>Cali</option>
+                <option>Bogota</option>
+                <option>Medellin</option>
+            </select>
+            <button onclick="ejecutar()">Filtrar</button>
+            <button onclick="limpiar()">Limpiar</button>
+            <button onclick="navegar('C:\ProyectoFinal/HTML/productos.html')">Regresar</button>
+        </section>
+
+        <section>
+            <table id="miTabla">
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Categoria</td>
+                        <td>Precio</td>
+                        <td>Ubicacion</td>
+                        <td>Area</td>
+                        <td>Imagen</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="C:\ProyectoFinal\JS\datos.js"></script>
+    <script src='C:\ProyectoFinal/JS/busqueda.js'></script>
+</body>
+
+</html>
